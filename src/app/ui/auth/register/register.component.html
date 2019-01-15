@@ -1,0 +1,47 @@
+<!-- <link href="assets/css/floating-labels.css" type="text/css" rel="stylesheet"> -->
+<form class="form-signin">
+  <div class="text-center mb-4">
+    <div class="text-center mb-4">
+        <img class="mb-4" src="/assets/thumbnails/image.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">S'incrire</h1>    
+      </div>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" id="inputName" class="form-control" placeholder="Nom" required>
+    <label for="inputNom">Nom</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" id="inputPrenom" class="form-control" placeholder="Prenom" required>
+    <label for="inputPrenom">Prenom</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Addresse Email" required>
+    <label for="inputEmail">Addresse Email</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe" required>
+    <label for="inputPassword">Mot de passe</label>
+  </div>
+
+  <!-- <div class="form-label-group">
+    <input type="text" id="inputDomaine" class="form-control" placeholder="Votre domaine" required>
+    <label for="inputDomaine">Domaine</label>
+  </div> -->
+
+
+  <div class="form-label-group">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choisir votre domaine...</option>
+          <option value="1">Marketing</option>
+          <option value="2">Programmation</option>
+          <option value="3">Sécurité</option>
+        </select>
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSubmit()">S'inscrire</button>
+  <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+</form>
